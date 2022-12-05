@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <!--<header class="header">
       <div class="header__container container">
         <a class="logo header__logo link" href="./index.html" lang="en">
           Web<span class="logo--black">Studio</span>
@@ -58,74 +58,69 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header>-->
     <main>
       <section class="hero">
         <div class="hero__container container">
           <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
+          <button type="button" data-modal-open class="hero__btn">Замовити послугу</button>
         </div>
       </section>
-
+      
       <!--Modal window-->
-
-      <div data-modal class="backdrop is-hidden">
+      
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="modal__btn" data-modal-close> 
-            <svg class="modal__icon"  width="18" height="18">
+          <button class="modal__btn" data-modal-close>
+            <svg class="modal-icon" width="18" height="18">
               <use href="./images/icons.svg#close-icon"></use>
             </svg>
           </button>
-
-
-          <strong class="modal__label">Залиште свої дані, ми вам передзвонимо</strong>
-          <form class="modal__form" name="modal_form">
-            <div class="modal__form-group" role="group">
-              <label class="modal__form-label" for="user_name">Ім'я</label>
-              <div class="modal__form-wrapper">
-                <input class="modal__form-field" name="user_name" type="text" id="user_name">
-                <svg class="modal__form-icon" width="18" height="18">
+      
+      
+          <strong class="modal-label">Залиште свої дані, ми вам передзвонимо</strong>
+          <form class="modal-form" name="modal_form">
+            <div class="modal-form-group" role="group">
+              <label class="modal-form-label" for="user_name">Ім'я</label>
+              <div class="modal-form-wrapper">
+                <input class="modal-form-field" name="user_name" type="text" id="user_name">
+                <svg class="modal-form-icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
               </div>
-              <label class="modal__form-label" for="user_phone">Телефон</label>
-              <div class="modal__form-wrapper">
-                <input class="modal__form-field" name="user_phone" type="text" id="user_phone">
-                <svg class="modal__form-icon" width="18" height="18">
+              <label class="modal-form-label" for="user_phone">Телефон</label>
+              <div class="modal-form-wrapper">
+                <input class="modal-form-field" name="user_phone" type="text" id="user_phone">
+                <svg class="modal-form-icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-receiver"></use>
                 </svg>
               </div>
-              <label class="modal__form-label" for="user_mail">Пошта</label>
-              <div class="modal__form-wrapper">
-                <input class="modal__form-field" name="user_mail" type="text" id="user_mail">
-                <svg class="modal__form-icon" width="18" height="18">
+              <label class="modal-form-label" for="user_mail">Пошта</label>
+              <div class="modal-form-wrapper">
+                <input class="modal-form-field" name="user_mail" type="text" id="user_mail">
+                <svg class="modal-form-icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </div>
-              <label class="modal__form-label" for="user_message">Коментар</label>
-              <textarea 
-                class="modal__form-message"
-                name="user_message" 
-                id="user_message" 
-                rows="6"
-                placeholder="Введіть текст">
-              </textarea>
+              <label class="modal-form-label" for="user_message">Коментар</label>
+              <textarea class="modal-form-message" name="user_message" id="user_message" rows="6" placeholder="Введіть текст">
+                    </textarea>
             </div>
-
-            <div class="modal__form-agreement" role="group">
-              <input class="modal__form-checkbox" name="user_agreement" type="checkbox" id="user_agreement">
-              <label class="modal__form-agreement-disc" for="user_agreement">
-                Погоджуюся з розсилкою та приймаю 
-                <a class="modal__form-agreement-link" href="">Умови договору</a>
+      
+            <div class="modal-form-agreement" role="group">
+              <input class="modal-form-checkbox" name="user_agreement" type="checkbox" id="user_agreement">
+              <label class="modal-form-agreement-disc" for="user_agreement">
+                Погоджуюся з розсилкою та приймаю
+                <a class="modal-form-agreement-link" href="">Умови договору</a>
               </label>
-              <button class="modal__form-btn" type="submit">Відправити</button>
+              <button class="modal-form-btn" type="submit">Відправити</button>
             </div>
-        
+      
           </form>
         </div>
       </div>
 
-      <section class="advantages">
+      <!--<section class="advantages">
         <div class="container">
           <ul class="advantage__list list">
             <li class="advantage__item">
@@ -177,9 +172,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
-      <section class="about-work">
+      <!--<section class="about-work">
         <div class="about-work__container container">
           <h2 class="about-work__title">Чим ми займаємося</h2>
           <ul class="about-work__photos list">
@@ -209,9 +204,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
-      <section class="work-team">
+      <!--<section class="work-team">
        <div class="container">
           <h2 class="work-team__title">Наша команда</h2>
           <ul class="work-team__list list">
@@ -473,9 +468,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
-      <section class="clients-area">
+      <!--<section class="clients-area">
         <div class="container">
           <h2 class="clients-area__title">Постійні клієнти</h2>
           <ul class="clients-area__list list">
@@ -523,11 +518,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
     </main>
 
 
-    <footer class="footer">
+    <!--<footer class="footer">
       <div class="container footer__container">
         <div class="footer__contacts">
           <a class="logo footer__logo link" href="./index.html" lang="en">
@@ -601,13 +596,6 @@
         </div>
       </div>
     </footer>-->
-
-    <!--Mobile menu-->
-    <button class="logo__burger-menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="logo__menu-icon" width="40" height="40">
-        <use href="./images/icons.svg#icon-burger_menu_40px"></use>
-      </svg>
-    </button>
 
     <script src="./js/modal.js"></script>
   </body>
