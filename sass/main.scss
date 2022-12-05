@@ -1,0 +1,23 @@
+//utils styles
+@import './utils/variables';
+@import './utils/visually-hidden';
+//base styles
+@import './base/base';
+@import './base/reset';
+//components styles
+@import './components/container';
+@import './components/header';
+@import './components/logo';
+@import './components/nav';
+@import './components/hero';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/advantages';
+@import './components/about-work';
+@import './components/work-team';
+@import './components/socials';
+@import './components/clients';
+@import './components/footer';
+@import './components/portfolio';
+
+

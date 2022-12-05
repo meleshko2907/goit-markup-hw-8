@@ -1,0 +1,48 @@
+
+.about-work {
+    padding-bottom: 94px;
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+}
+
+.about-work__photos {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.about-work__photo-box {
+    position: relative;
+}
+
+.about-work__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+}
+
+.about-work__overlay {
+    position: absolute;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 100%;
+}
+
+.about-work__overlay-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
