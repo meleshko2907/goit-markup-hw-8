@@ -1,6 +1,6 @@
 .hero {
-    max-width: 1600px;
-    min-height: 600px;
+    max-width: 480px;
+    min-height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
     background-color: #C4C4C4;
     background-repeat: no-repeat;
@@ -8,23 +8,48 @@
     background-size: cover;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+        min-height: 400px;
+        
+    }
+    @media screen and (min-width:1200px) {
+        max-width: 1600px;
+        min-height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 .hero__title {
-    margin-right: 338px;
+    margin-right: 60px;
     margin-bottom: 30px;
-    margin-left: 252px;
-    width: 696px;
+    margin-left: 60px;
+    width: 360px;
     font-family: inherit;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: calc(42/26);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @media screen and (min-width:768px) {
+        margin-right: 204px;
+        margin-left: 204px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-right: 252px;
+        margin-left: 252px;
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__btn {
@@ -42,7 +67,7 @@
 
     cursor: pointer;
     border-radius: 4px;
-    padding: 10px 32px;
+    padding: 10px 24px;
     margin: 0 auto;
     border-width: 0px;
     transition-duration: var(--anim-speed);
@@ -54,6 +79,10 @@
         background: #188CE8;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
+    }
+
+    @media screen and (min-width:1200px) {
+        padding: 10px 32px;
     }
 }
 
