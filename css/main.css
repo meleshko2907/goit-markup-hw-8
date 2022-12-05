@@ -494,11 +494,17 @@ img {
           align-items: center;
   gap: 7px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__form-agreement {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .modal__form-agreement-link {
