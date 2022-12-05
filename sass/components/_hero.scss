@@ -46,13 +46,14 @@
     margin: 0 auto;
     border-width: 0px;
     transition-duration: var(--anim-speed);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:active,
+    &:hover,
+    &:focus {
+        background: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
 }
 
-.hero__btn:active,
-.hero__btn:hover,
-.hero__btn:focus {
-    background: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}

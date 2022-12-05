@@ -241,10 +241,7 @@ img {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero__btn:active,
-.hero__btn:hover,
-.hero__btn:focus {
+.hero__btn:active, .hero__btn:hover, .hero__btn:focus {
   background: #188CE8;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -261,6 +258,18 @@ img {
   z-index: 100;
   -webkit-transition: var(--anim-speed) linear, visibility var(--anim-speed) linear;
   transition: var(--anim-speed) linear, visibility var(--anim-speed) linear;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-70%);
+          transform: translateX(-50%) translateY(-70%);
 }
 
 .modal {
@@ -305,29 +314,15 @@ img {
   -webkit-transition: fill var(--anim-speed);
   transition: fill var(--anim-speed);
 }
-
-.modal__btn:hover,
-.modal__btn:focus {
+.modal__btn:hover, .modal__btn:focus {
   fill: var(--secondary-color);
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.backdrop.is-hidden .modal {
-  opacity: 0;
-  -webkit-transform: translateX(-50%) translateY(-70%);
-          transform: translateX(-50%) translateY(-70%);
-}
-
-.modal-form-group {
+.modal__form-group {
   margin-bottom: 20px;
 }
 
-.modal-label {
+.modal__label {
   display: block;
   text-align: center;
   margin-bottom: 12px;
@@ -337,7 +332,7 @@ img {
   color: var(--brand-color);
 }
 
-.modal-form-label {
+.modal__form-label {
   display: block;
   font-size: 12px;
   margin-bottom: 4px;
@@ -347,12 +342,12 @@ img {
   color: #757575;
 }
 
-.modal-form-wrapper {
+.modal__form-wrapper {
   position: relative;
   margin-bottom: 10px;
 }
 
-.modal-form-field {
+.modal__form-field {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -365,14 +360,13 @@ img {
   transition: outline var(--anim-speed), box-shadow;
   transition: outline var(--anim-speed), box-shadow, -webkit-box-shadow;
 }
-
-.modal-form-field:focus {
+.modal__form-field:focus {
   outline-color: var(--secondary-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.modal-form-icon {
+.modal__form-icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -381,12 +375,11 @@ img {
   -webkit-transition: fill var(--anim-speed);
   transition: fill var(--anim-speed);
 }
-
-.modal-form-field:focus + .modal-form-icon {
+.modal__form-field:focus + .modal__form-icon {
   fill: var(--secondary-color);
 }
 
-.modal-form-message {
+.modal__form-message {
   display: block;
   width: 100%;
   height: 120px;
@@ -402,8 +395,7 @@ img {
   -webkit-transition: fill var(--anim-speed);
   transition: fill var(--anim-speed);
 }
-
-.modal-form-message:focus {
+.modal__form-message:focus {
   outline-color: var(--secondary-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -435,13 +427,11 @@ img {
   -webkit-transition: background var(--anim-speed);
   transition: background var(--anim-speed);
 }
-
-.modal-form-btn:hover,
-.modal-form-btn:focus {
+.modal-form-btn:hover, .modal-form-btn:focus {
   background: #188CE8;
 }
 
-.modal-form-agreement {
+.modal__form-agreement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,12 +452,12 @@ img {
   margin-bottom: 30px;
 }
 
-.modal-form-agreement-link {
+.modal__form-agreement-link {
   color: var(--secondary-color);
   text-underline-offset: 3px;
 }
 
-.modal-form-checkbox {
+.modal__form-checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -482,15 +472,14 @@ img {
   -webkit-transition: background-size var(--anim-speed), background-color var(--anim-speed), border-color var(--anim-speed);
   transition: background-size var(--anim-speed), background-color var(--anim-speed), border-color var(--anim-speed);
 }
-
-.modal-form-checkbox:checked {
+.modal__form-checkbox:checked {
   background-color: var(--secondary-color);
   border-color: #2196F3;
   background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
   background-size: 11px 8px;
 }
 
-.modal-form-agreement-disc {
+.modal__form-agreement-disc {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
