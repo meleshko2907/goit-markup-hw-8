@@ -1136,7 +1136,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .project-list {
-    width: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
