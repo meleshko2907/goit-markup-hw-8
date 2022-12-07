@@ -1010,7 +1010,7 @@ img {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin-right: 0;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1030,7 +1030,7 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    margin-left: auto;
+    margin: 0 auto;
   }
 }
 
@@ -1178,7 +1178,6 @@ img {
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
   margin-bottom: 20px;
-  margin-left: 0px;
 }
 @media screen and (min-width: 1200px) {
   .form__field {
