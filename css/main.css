@@ -62,11 +62,12 @@ img {
   }
 }
 
-.header {
-  padding-top: 16px;
-  padding-bottom: 16px;
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,6 +620,7 @@ img {
 
 .advantage__item {
   width: 450px;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .advantage__item {
@@ -628,6 +630,7 @@ img {
 @media screen and (min-width: 1200px) {
   .advantage__item {
     width: 270px;
+    padding-bottom: 0px;
   }
 }
 
@@ -1119,6 +1122,7 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    text-align: left;
     margin-right: 90px;
     margin-bottom: 0px;
   }

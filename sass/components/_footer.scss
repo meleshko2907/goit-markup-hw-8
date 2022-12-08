@@ -10,7 +10,6 @@
     @media screen and(min-width:1200px) {
         flex-direction: row;
         }
-
 }
 
 .footer__container {
@@ -106,6 +105,7 @@
     display: block;
     justify-content: baseline;
     align-items: flex-start;
+    text-align: left;
     margin-right: 90px;
     margin-bottom: 0px;
     }
