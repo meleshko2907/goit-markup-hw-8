@@ -65,7 +65,7 @@
       </div>
     </header>
 
-    
+
     <main>
       <section class="hero">
         <div class="hero__container container">
@@ -187,7 +187,11 @@
           <ul class="about-work__photos list">
             <li class="about-work__photo-box">
               <a href="">
-                <img src="./images/img1.png" alt="програміст с ноутбуком" width="370"/>
+                <img 
+                srcset="./images/about-work/about-work_l/img_l@1x.webp 1x, ./images/about-work/about-work_l/img_l@2x.webp 2x"
+                type="image/webp"
+                alt="програміст с ноутбуком" 
+                width="370"/>
               </a>
               <div class="about-work__overlay">
                 <p class="about-work__overlay-text">Десктопні додатки</p>
@@ -195,7 +199,11 @@
             </li>
             <li class="about-work__photo-box">
               <a href="">
-                <img src="./images/img2.png" alt="програміст с телефоном" width="370"/>
+                <img 
+                srcset="./images/about-work/about-work_l/img_l@1x-1.webp 1x, images/about-work/about-work_l/img_l@2x-1.webp 2x" 
+                type="image/webp"
+                alt="програміст с телефоном" 
+                width="370"/>
               </a>
               <div class="about-work__overlay">
                 <p class="about-work__overlay-text">Мобільні додатки</p>
@@ -203,7 +211,11 @@
             </li>
             <li class="about-work__photo-box">
               <a href=""> 
-                <img src="./images/img3.png" alt="програміст с планшетом" width="370"/>
+                <img 
+                srcset="./images/about-work/about-work_l/img_l@1x-2.webp 1x, images/about-work/about-work_l/img_l@2x-2.webp 2x" 
+                type="image/webp"
+                alt="програміст с планшетом" 
+                width="370"/>
               </a>
               <div class="about-work__overlay">
                 <p class="about-work__overlay-text">Дизайнерські рішення</p>
@@ -218,7 +230,23 @@
           <h2 class="work-team__title">Наша команда</h2>
           <ul class="work-team__list list">
             <li class="work-team__card">
-              <img class="work-team__photo" src="./images/team1.jpg" alt="Ігор Дем'яненко" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/work-team/img_l@1x.webp 1x, 
+                ./images/work-team/img_l@2x.webp 2x>
+                <source media="(min-width: 768px)" srcset="./images/work-team/img_m@1x.webp 1x,
+                ./images/work-team/img_m@2x.webp" 2x>
+                <source media="(max-width: 767px)" srcset="../images/work-team/img_s@1x.webp 1x,
+                ./images/work-team/img_s@2x.webp 2x"
+                type="image/webp">
+                <img
+                src="./images/work-team/img_m@1x.webp" 
+                alt="Ігор Дем'яненко" 
+                width="450"
+                height="460"
+                loading="lazy"
+                />
+
+              </picture>
               <div class="work-team__information">
                 <h3 class="work-team__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="work-team__occupation">Product Designer</p>
@@ -282,7 +310,20 @@
               </div>
             </li>
             <li class="work-team__card">
-              <img class="work-team__photo" src="./images/team2.jpg" alt="Ольга Рєпіна" width="270" />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/work-team/img_l@1x-1.webp 1x, 
+                                  ./images/work-team/img_l@2x-1.webp 2x">
+                    <source media="(min-width: 768px)" srcset="./images/work-team/img_m@1x-1.webp 1x,
+                                  ./images/work-team/img_m@2x-1.webp 2x">
+                    <source media="(max-width: 767px)" srcset="./images/work-team/img_s@1x-1.webp 1x,
+                                  ./images/work-team/img_s@2x-1.webp 2x" 
+                    type="image/webp">
+                    <img src="./images/work-team/img_s@1x-1.webp" 
+                    alt="Ольга Рєпіна" 
+                    width="450" 
+                    height="460"
+                    loading="lazy" />
+                  </picture>
               <div class="work-team__information">
                 <h3 class="work-team__name">Ольга Рєпіна</h3>
                 <p lang="en" class="work-team__occupation">Frontend Developer</p>
@@ -346,7 +387,19 @@
               </div>
             </li>
             <li class="work-team__card">
-              <img class="work-team__photo" src="./images/team3.jpg" alt="Микола Тарасов" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/work-team/img_l@1x-2.webp 1x, 
+                                                ./images/work-team/img_l@2x-2.webp 2x">
+                <source media="(min-width: 768px)" srcset="./images/work-team/img_m@1x-2.webp 1x,
+                                                ./images/work-team/img_m@2x-2.webp 2x">
+                <source media="(max-width: 767px)" srcset="./images/work-team/img_s@1x-2.webp 1x,
+                                                ./images/work-team/img_s@2x-2.webp 2x" 
+                                                type="image/webp">
+                <img src="./images/work-team/img_s@1x-2.webp"
+                alt="Микола Тарасов" 
+                width="450" height="460" 
+                loading="lazy" />
+              </picture>
               <div class="work-team__information">
                 <h3 class="work-team__name">Микола Тарасов</h3>
                 <p lang="en" class="work-team__occupation">Marketing</p>
@@ -410,7 +463,20 @@
               </div>
             </li>
             <li class="work-team__card">
-              <img class="work-team__photo" src="./images/team4.jpg" alt="Михайло Єрмаков" width="270" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/work-team/img_l@1x-3.webp 1x, 
+                                                              ./images/work-team/img_l@2x-3.webp 2x">
+                <source media="(min-width: 768px)" srcset="./images/work-team/img_m@1x-3.webp 1x,
+                                                              ./images/work-team/img_m@2x-3.webp 2x">
+                <source media="(max-width: 767px)" srcset="./images/work-team/img_s@1x-3.webp 1x,
+                                                              ./images/work-team/img_s@2x-3.webp 2x" 
+                        type="image/webp">
+                <img src="./images/work-team/img_s@1x-2.webp" 
+                alt="Михайло Єрмаков" 
+                width="450" 
+                height="460" 
+                loading="lazy" />
+              </picture>
               <div class="work-team__information">
                 <h3 class="work-team__name">Михайло Єрмаков</h3>
                 <p lang="en" class="work-team__occupation">UI Designer</p>
