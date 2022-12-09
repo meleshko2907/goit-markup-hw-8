@@ -136,9 +136,24 @@ img {
   color: var(--secondary-color);
 }
 
-.header__phone,
+.header__phone {
+  fill: currentColor;
+}
+@media screen and (max-width: 1199px) {
+  .header__phone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 .header__email {
   fill: currentColor;
+}
+@media screen and (max-width: 1199px) {
+  .header__email {
+    width: 14px;
+    height: 10px;
+  }
 }
 
 .header__logo {
