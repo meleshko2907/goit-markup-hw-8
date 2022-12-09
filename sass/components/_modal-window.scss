@@ -7,6 +7,9 @@
     background: rgba(0, 0, 0, 0.2);
     z-index: 100;
     transition: var(--anim-speed) linear, visibility var(--anim-speed) linear;
+
+
+    overflow-y: scroll;
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -221,5 +224,6 @@
 }
 
 .modal__form-agreement-disc {
+    flex-wrap: wrap;
     user-select: none;
 }
