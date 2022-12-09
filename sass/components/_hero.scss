@@ -1,7 +1,7 @@
 .hero {
-    max-width: 480px;
-    min-height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background.jpg);
+    max-width: 1600px;
+    min-height: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-color: #C4C4C4;
     background-repeat: no-repeat;
     background-position: center;
@@ -11,17 +11,45 @@
     padding-top: 118px;
     padding-bottom: 118px;
 
-    @media screen and (min-width:768px) {
-        max-width: 768px;
-        min-height: 400px;
-        
-    }
-    @media screen and (min-width:1200px) {
-        max-width: 1600px;
-        min-height: 600px;
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
+    //Mobile version
+    background-image: url('../images/hero/hero_s//Header_img_s@1x.jpg');
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .box {
+                background-image: url('../images/hero/hero_s/Header_img_s@2x.jpg');
+            }
+        }
+    
+        //Tablet version
+    
+        @media screen and (min-width:481px) {
+            background-image: url('../images/hero/hero_m/Header_img_m@1x.jpg');
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .box {
+                    background-image: url('../images/hero/hero_m/Header_img_m@2x.jpg');
+                }
+            }
+        }
+    
+        //desktop version
+    
+        @media screen and (min-width:769px) {
+            background-image: url('../images/hero/hero_l/Img_l@1x.jpg');
+            padding-top: 200px;
+            padding-bottom: 200px;
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .box {
+                    background-image: url('../images/hero/hero_l/Img_l@2x.jpg');
+                }
+            }
+        }
 }
 
 .hero__title {
